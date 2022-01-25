@@ -1,0 +1,376 @@
+\hypertarget{class_preprocess}{}\doxysection{Preprocess Class Reference}
+\label{class_preprocess}\index{Preprocess@{Preprocess}}
+
+
+Grupuje wszystkie funkcje preprocessingu w naszym projekcie.  
+
+
+
+
+{\ttfamily \#include $<$preprocess.\+hpp$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static cv\+::\+Mat \mbox{\hyperlink{class_preprocess_a17ec49d2aafa0e3e4745180221776039}{prepare\+Frame}} (cv\+::\+Mat input, int thresh1, int thresh2, cv\+::\+Mat kernel)
+\begin{DoxyCompactList}\small\item\em Dokonuje preprocessingu na zadanej klatce. \end{DoxyCompactList}\item 
+static cv\+::\+Mat \mbox{\hyperlink{class_preprocess_a45480ff46bac220390588afefaf1a10b}{cut\+Matrix}} (cv\+::\+Mat input, cv\+::\+Rect dimensions, cv\+::\+Rect coordinates)
+\begin{DoxyCompactList}\small\item\em wycina zadany obszar z klatki wejściowej. \end{DoxyCompactList}\item 
+static cv\+::\+Point2f $\ast$ \mbox{\hyperlink{class_preprocess_a109c5def8aa697eb3b0c285bc6d78da0}{convert\+Rect\+To\+Point2f}} (cv\+::\+Rect rect)
+\begin{DoxyCompactList}\small\item\em Konwertuje rect na point2f. \end{DoxyCompactList}\item 
+static cv\+::\+Mat \mbox{\hyperlink{class_preprocess_a3fd7f0fbd0290700bede24201404d6dd}{get\+Warp\+Ident}} (cv\+::\+Mat input\+Image, cv\+::\+Rect rect)
+\begin{DoxyCompactList}\small\item\em Dokonuje perspektywizacji zadego obszaru. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_preprocess_a8c6b38d39dfab6214b212f37da370bb8}{display\+Warped\+Images}} (cv\+::\+Mat input, std\+::vector$<$ cv\+::\+Rect $>$ idents, int thresh1, int thresh2)
+\begin{DoxyCompactList}\small\item\em Dokonuje perspektywizacji na podstawie zadanych współrzędnych. \end{DoxyCompactList}\item 
+static std\+::vector$<$ cv\+::\+Rect $>$ \mbox{\hyperlink{class_preprocess_a957de8a541bcb4cb7b3a816670fe8379}{find\+Idents}} (std\+::vector$<$ std\+::vector$<$ cv\+::\+Point $>$ $>$ contours, int num\+Of\+Edges, double aspect\+Low, double aspect\+High)
+\begin{DoxyCompactList}\small\item\em Odfiltrowuje te identyfikatory, które spełniają zadane ograniczenia. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::vector$<$ cv\+::\+Point $>$ $>$ \mbox{\hyperlink{class_preprocess_a2f3e998976fc1608fa675447714bc20a}{find\+All\+Closed\+Polys}} (cv\+::\+Mat input, cv\+::\+Mat output, int area)
+\begin{DoxyCompactList}\small\item\em Szuka wszystkich zamkniętych wielomianów w klatce wejściowej. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_preprocess_a1e97ee1d91bc80b38961ecb3f684f296}{determine\+Number}} (cv\+::\+Mat wrapped\+Image, int width, int height)
+\begin{DoxyCompactList}\small\item\em Dzieli zadanych obszar na 16 fragmentów. Determinuje dominujący kolor w podobszarach i określa na tej podstawie znaleziony numer. 0 -\/ 15. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_preprocess_a10163d88f7b37d06ad5e8d0cdb1131ca}{calculate\+Avg\+Color\+In\+Rect}} (cv\+::\+Mat rect)
+\begin{DoxyCompactList}\small\item\em Zwraca średni kolor w zadanym. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_preprocess_acdef9e8c3d50015edaf648d121310373}{downscale\+Movie}} (std\+::string movie\+Name, int width, int height)
+\begin{DoxyCompactList}\small\item\em Zmniejsza rozdzielczość filmu i zapisuje go na dysku. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_preprocess_ac65a3d545f04990fa38ec0f580262cca}{is\+Black}} (int avg\+Color)
+\begin{DoxyCompactList}\small\item\em Funkcja okreslająca czy zadany kolor jest przez nas rozumiany jako bliższy kolorowi czarnemu / szaremu. \end{DoxyCompactList}\item 
+static cv\+::\+Mat \mbox{\hyperlink{class_preprocess_aa7ebfafcce4a61096a02acb1ae9bdf58}{get\+Rect\+From\+Matrix}} (cv\+::\+Mat matrix, cv\+::\+Rect rect)
+\begin{DoxyCompactList}\small\item\em Wycina mały obszar z dużego obszaru. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_preprocess_ac3a86c437ce604fc010cfc4dbf351edb}{can\+Be\+Compared}} (cv\+::\+Mat first, cv\+::\+Mat second)
+\begin{DoxyCompactList}\small\item\em Określa czy rozmiary macierzy są równe. \end{DoxyCompactList}\item 
+static cv\+::\+Mat \mbox{\hyperlink{class_preprocess_a71f7ebc33f9fd391521b08b10be5a8fc}{get\+Difference\+Matrix}} (cv\+::\+Mat first, cv\+::\+Mat second)
+\begin{DoxyCompactList}\small\item\em Odejmuje macierze. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_preprocess_aed2f004f75a57bce94171e7a7926530d}{calculate\+Difference\+Percentage}} (cv\+::\+Mat first, cv\+::\+Mat diff, int limit=10)
+\begin{DoxyCompactList}\small\item\em Tworzy histogram różnicy dwóch macierzy i zwraca procent czarnych pikseli / wszystkie piksele macierzy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Grupuje wszystkie funkcje preprocessingu w naszym projekcie. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_preprocess_a10163d88f7b37d06ad5e8d0cdb1131ca}\label{class_preprocess_a10163d88f7b37d06ad5e8d0cdb1131ca}} 
+\index{Preprocess@{Preprocess}!calculateAvgColorInRect@{calculateAvgColorInRect}}
+\index{calculateAvgColorInRect@{calculateAvgColorInRect}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{calculateAvgColorInRect()}{calculateAvgColorInRect()}}
+{\footnotesize\ttfamily int Preprocess\+::calculate\+Avg\+Color\+In\+Rect (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Zwraca średni kolor w zadanym. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & obszar wejściowy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+średni kolor w zadanym obszarze 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_preprocess_aed2f004f75a57bce94171e7a7926530d}\label{class_preprocess_aed2f004f75a57bce94171e7a7926530d}} 
+\index{Preprocess@{Preprocess}!calculateDifferencePercentage@{calculateDifferencePercentage}}
+\index{calculateDifferencePercentage@{calculateDifferencePercentage}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{calculateDifferencePercentage()}{calculateDifferencePercentage()}}
+{\footnotesize\ttfamily double Preprocess\+::calculate\+Difference\+Percentage (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{first,  }\item[{cv\+::\+Mat}]{diff,  }\item[{int}]{limit = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tworzy histogram różnicy dwóch macierzy i zwraca procent czarnych pikseli / wszystkie piksele macierzy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & klatka wejśćiowa \\
+\hline
+{\em diff} & klatka wyjściowa \\
+\hline
+{\em limit} & limit odpowiadający za określenie jak wiele pikseli traktujemy jako bliższe kolorowi czarnemu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+procent różnicy. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_preprocess_ac3a86c437ce604fc010cfc4dbf351edb}\label{class_preprocess_ac3a86c437ce604fc010cfc4dbf351edb}} 
+\index{Preprocess@{Preprocess}!canBeCompared@{canBeCompared}}
+\index{canBeCompared@{canBeCompared}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{canBeCompared()}{canBeCompared()}}
+{\footnotesize\ttfamily bool Preprocess\+::can\+Be\+Compared (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{first,  }\item[{cv\+::\+Mat}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Określa czy rozmiary macierzy są równe. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000004}{Deprecated}}]Nie jest używana \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & pierwszy obszar \\
+\hline
+{\em second} & drugi obszsr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jęzeli są 
+
+false jeżeli nie są 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_preprocess_a109c5def8aa697eb3b0c285bc6d78da0}\label{class_preprocess_a109c5def8aa697eb3b0c285bc6d78da0}} 
+\index{Preprocess@{Preprocess}!convertRectToPoint2f@{convertRectToPoint2f}}
+\index{convertRectToPoint2f@{convertRectToPoint2f}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{convertRectToPoint2f()}{convertRectToPoint2f()}}
+{\footnotesize\ttfamily Point2f $\ast$ Preprocess\+::convert\+Rect\+To\+Point2f (\begin{DoxyParamCaption}\item[{cv\+::\+Rect}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Konwertuje rect na point2f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & współrzędne \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+konwertuje współrzędne do struktury Point2f 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_preprocess_a45480ff46bac220390588afefaf1a10b}\label{class_preprocess_a45480ff46bac220390588afefaf1a10b}} 
+\index{Preprocess@{Preprocess}!cutMatrix@{cutMatrix}}
+\index{cutMatrix@{cutMatrix}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{cutMatrix()}{cutMatrix()}}
+{\footnotesize\ttfamily Mat Preprocess\+::cut\+Matrix (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{input,  }\item[{cv\+::\+Rect}]{dimensions,  }\item[{cv\+::\+Rect}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+wycina zadany obszar z klatki wejściowej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & klatka wejściowa \\
+\hline
+{\em dimensions} & wymiary wycięcia \\
+\hline
+{\em coordinates} & współrzędne wycięcia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca wycięty obszar w postaci macierzy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_preprocess_a1e97ee1d91bc80b38961ecb3f684f296}\label{class_preprocess_a1e97ee1d91bc80b38961ecb3f684f296}} 
+\index{Preprocess@{Preprocess}!determineNumber@{determineNumber}}
+\index{determineNumber@{determineNumber}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{determineNumber()}{determineNumber()}}
+{\footnotesize\ttfamily int Preprocess\+::determine\+Number (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{wrapped\+Image,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Dzieli zadanych obszar na 16 fragmentów. Determinuje dominujący kolor w podobszarach i określa na tej podstawie znaleziony numer. 0 -\/ 15. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wrapped\+Image} & klatka wejściowa \\
+\hline
+{\em width} & szerokość \\
+\hline
+{\em height} & wysokość \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+znaleziony numer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_preprocess_a8c6b38d39dfab6214b212f37da370bb8}\label{class_preprocess_a8c6b38d39dfab6214b212f37da370bb8}} 
+\index{Preprocess@{Preprocess}!displayWarpedImages@{displayWarpedImages}}
+\index{displayWarpedImages@{displayWarpedImages}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{displayWarpedImages()}{displayWarpedImages()}}
+{\footnotesize\ttfamily void Preprocess\+::display\+Warped\+Images (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{input,  }\item[{std\+::vector$<$ cv\+::\+Rect $>$}]{idents,  }\item[{int}]{thresh1,  }\item[{int}]{thresh2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Dokonuje perspektywizacji na podstawie zadanych współrzędnych. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]Używana wcześniej do debugowania \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em input} & klatka wejściowa \\
+\hline
+{\em idents} & współrzędne \\
+\hline
+{\em thresh1} & próg pierwszy \\
+\hline
+{\em thresh2} & próg drugi \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_preprocess_acdef9e8c3d50015edaf648d121310373}\label{class_preprocess_acdef9e8c3d50015edaf648d121310373}} 
+\index{Preprocess@{Preprocess}!downscaleMovie@{downscaleMovie}}
+\index{downscaleMovie@{downscaleMovie}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{downscaleMovie()}{downscaleMovie()}}
+{\footnotesize\ttfamily void Preprocess\+::downscale\+Movie (\begin{DoxyParamCaption}\item[{std\+::string}]{movie\+Name,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Zmniejsza rozdzielczość filmu i zapisuje go na dysku. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000002}{Deprecated}}]Używana do konwersji filmu. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em movie\+Name} & nazwa pliku wejściowego -\/\texorpdfstring{$>$}{>} wyjściowy ma przedrostek converted\+\_\+ \\
+\hline
+{\em width} & nowa szerokość \\
+\hline
+{\em height} & nowa wysokość \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_preprocess_a2f3e998976fc1608fa675447714bc20a}\label{class_preprocess_a2f3e998976fc1608fa675447714bc20a}} 
+\index{Preprocess@{Preprocess}!findAllClosedPolys@{findAllClosedPolys}}
+\index{findAllClosedPolys@{findAllClosedPolys}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{findAllClosedPolys()}{findAllClosedPolys()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ Point $>$ $>$ Preprocess\+::find\+All\+Closed\+Polys (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{input,  }\item[{cv\+::\+Mat}]{output,  }\item[{int}]{area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Szuka wszystkich zamkniętych wielomianów w klatce wejściowej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & macierz wejsciowa \\
+\hline
+{\em output} & macierz wyjściowa \\
+\hline
+{\em area} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca wektor wektorów punktów będących wszystkimi wielomiany do dalszej obróbki 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_preprocess_a957de8a541bcb4cb7b3a816670fe8379}\label{class_preprocess_a957de8a541bcb4cb7b3a816670fe8379}} 
+\index{Preprocess@{Preprocess}!findIdents@{findIdents}}
+\index{findIdents@{findIdents}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{findIdents()}{findIdents()}}
+{\footnotesize\ttfamily vector$<$ Rect $>$ Preprocess\+::find\+Idents (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ cv\+::\+Point $>$ $>$}]{contours,  }\item[{int}]{num\+Of\+Edges,  }\item[{double}]{aspect\+Low,  }\item[{double}]{aspect\+High }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Odfiltrowuje te identyfikatory, które spełniają zadane ograniczenia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contours} & przeszukiwane kontury \\
+\hline
+{\em num\+Of\+Edges} & ilość krawędzi 4 -\/ prostokąt \\
+\hline
+{\em aspect\+Low} & współczynnik startowy określający czy znaleziony identyfikator jest ustawiony pionowo. \\
+\hline
+{\em aspect\+High} & współczynnik końcowy określający czy znaleziony identyfikator jest ustawiony pionowo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca przefiltrowane identyfikatory spełniające założenia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_preprocess_a71f7ebc33f9fd391521b08b10be5a8fc}\label{class_preprocess_a71f7ebc33f9fd391521b08b10be5a8fc}} 
+\index{Preprocess@{Preprocess}!getDifferenceMatrix@{getDifferenceMatrix}}
+\index{getDifferenceMatrix@{getDifferenceMatrix}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{getDifferenceMatrix()}{getDifferenceMatrix()}}
+{\footnotesize\ttfamily Mat Preprocess\+::get\+Difference\+Matrix (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{first,  }\item[{cv\+::\+Mat}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Odejmuje macierze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & pierwsza klatka \\
+\hline
+{\em second} & druga klatka \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wartość bezwględna różnicy dwóch macierzy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_preprocess_aa7ebfafcce4a61096a02acb1ae9bdf58}\label{class_preprocess_aa7ebfafcce4a61096a02acb1ae9bdf58}} 
+\index{Preprocess@{Preprocess}!getRectFromMatrix@{getRectFromMatrix}}
+\index{getRectFromMatrix@{getRectFromMatrix}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{getRectFromMatrix()}{getRectFromMatrix()}}
+{\footnotesize\ttfamily Mat Preprocess\+::get\+Rect\+From\+Matrix (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{matrix,  }\item[{cv\+::\+Rect}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Wycina mały obszar z dużego obszaru. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & klatka wejściowa \\
+\hline
+{\em rect} & wielkość obszaru do wycięcia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wycięty obszar 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_preprocess_a3fd7f0fbd0290700bede24201404d6dd}\label{class_preprocess_a3fd7f0fbd0290700bede24201404d6dd}} 
+\index{Preprocess@{Preprocess}!getWarpIdent@{getWarpIdent}}
+\index{getWarpIdent@{getWarpIdent}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{getWarpIdent()}{getWarpIdent()}}
+{\footnotesize\ttfamily Mat Preprocess\+::get\+Warp\+Ident (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{input\+Image,  }\item[{cv\+::\+Rect}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Dokonuje perspektywizacji zadego obszaru. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Image} & obszar wejściowy \\
+\hline
+{\em rect} & parametry obszaru \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca przetworzony obszar 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_preprocess_ac65a3d545f04990fa38ec0f580262cca}\label{class_preprocess_ac65a3d545f04990fa38ec0f580262cca}} 
+\index{Preprocess@{Preprocess}!isBlack@{isBlack}}
+\index{isBlack@{isBlack}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{isBlack()}{isBlack()}}
+{\footnotesize\ttfamily bool Preprocess\+::is\+Black (\begin{DoxyParamCaption}\item[{int}]{avg\+Color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Funkcja okreslająca czy zadany kolor jest przez nas rozumiany jako bliższy kolorowi czarnemu / szaremu. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000003}{Deprecated}}]Nie używana \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em avg\+Color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jeżeli jest wartość piksela \texorpdfstring{$<$}{<} 150 false jeżeli nie 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_preprocess_a17ec49d2aafa0e3e4745180221776039}\label{class_preprocess_a17ec49d2aafa0e3e4745180221776039}} 
+\index{Preprocess@{Preprocess}!prepareFrame@{prepareFrame}}
+\index{prepareFrame@{prepareFrame}!Preprocess@{Preprocess}}
+\doxysubsubsection{\texorpdfstring{prepareFrame()}{prepareFrame()}}
+{\footnotesize\ttfamily Mat Preprocess\+::prepare\+Frame (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{input,  }\item[{int}]{thresh1,  }\item[{int}]{thresh2,  }\item[{cv\+::\+Mat}]{kernel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Dokonuje preprocessingu na zadanej klatce. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & klatka wejściowa \\
+\hline
+{\em thresh1} & pierwszy próg \\
+\hline
+{\em thresh2} & drugi próg \\
+\hline
+{\em kernel} & kernle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca przetworzoną klatkę. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+preprocess.\+hpp\item 
+preprocess.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,66 @@
+\hypertarget{_game_8hpp_source}{}\doxysection{Game.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}opencv2/opencv.hpp"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}opencv2/highgui.hpp"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}opencv2/imgproc.hpp"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}math.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}iostream"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}preprocess.hpp"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Player.hpp"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}settings.hpp"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}GameController.hpp"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_game}{Game}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \textcolor{keyword}{enum} \mbox{\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04}{GameState}}}
+\DoxyCodeLine{22     \{}
+\DoxyCodeLine{23         INIT,}
+\DoxyCodeLine{24         GREEN,}
+\DoxyCodeLine{25         YELLOW,}
+\DoxyCodeLine{26         RED}
+\DoxyCodeLine{27     \};}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a2f767075dc1af8304ec50f0560df64f2}{gameStart}}();}
+\DoxyCodeLine{35     \mbox{\hyperlink{class_game_a28c22c3fa641d870f8ae659c6605353a}{Game}}(\textcolor{keywordtype}{int} difficulty);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{private}:}
+\DoxyCodeLine{38     cv::VideoCapture cap;}
+\DoxyCodeLine{39     cv::Rect statusFrame;}
+\DoxyCodeLine{40     std::vector<cv::Rect> playerIdents;}
+\DoxyCodeLine{41     std::map<int, Player> players;}
+\DoxyCodeLine{42     cv::Mat frame, frameGray, blured, preparedFrame, tresholded;}
+\DoxyCodeLine{43     \textcolor{keywordtype}{int} detectedPlayers;}
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} timeCounter;}
+\DoxyCodeLine{45     \textcolor{keywordtype}{int} stateLength;}
+\DoxyCodeLine{46     \textcolor{keyword}{enum} \mbox{\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04}{GameState}} gameState;}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} difficulty;}
+\DoxyCodeLine{48     \mbox{\hyperlink{class_game_controller}{GameController}} gameController;}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{bool} initFrame(\textcolor{keywordtype}{int} frameNumber);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} greenFrame(\textcolor{keywordtype}{int} frameNumber);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} yellowFrame(\textcolor{keywordtype}{int} frameNumber);}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} redFrame(\textcolor{keywordtype}{int} frameNumber);}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} prepareTrackbars(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{84     \textcolor{keywordtype}{void} prepareCamera(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} drawPlayers(cv::Mat output);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{97     \textcolor{keywordtype}{void} drawStatusFrame(cv::Mat output, \mbox{\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04}{GameState}} gameStatus);}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{104     \textcolor{keywordtype}{void} addPlayer(\textcolor{keywordtype}{int} playerId, cv::Rect playerIdent);}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{112     std::map<int, Player>::iterator findPlayer(\textcolor{keywordtype}{int} playerId);}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{121     \textcolor{keywordtype}{bool} determineIfPlayerHasMoved(\textcolor{keywordtype}{int} playerId, cv::Mat diffFrame, cv::Mat stoppedFrame);}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{128     \textcolor{keywordtype}{void} displayPlayerMovement(cv::Mat diffFrame, \textcolor{keywordtype}{int} playerId);}
+\DoxyCodeLine{129 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,59 @@
+\hypertarget{_game_controller_8hpp_source}{}\doxysection{Game\+Controller.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}opencv2/opencv.hpp"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}opencv2/highgui.hpp"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}opencv2/imgproc.hpp"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}math.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}iostream"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}preprocess.hpp"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Player.hpp"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}settings.hpp"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_game_controller}{GameController}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     \textcolor{keywordtype}{int} area;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} thresh1;}
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} thresh2;}
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} kernelWidth;}
+\DoxyCodeLine{21     \textcolor{keywordtype}{int} kernelHeight;}
+\DoxyCodeLine{22     cv::Mat kernel;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_game_controller_a7d72ff3f639acb68578e20fee3649b42}{GameController::GameController}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{34     std::vector<cv::Rect> \mbox{\hyperlink{class_game_controller_a385b7efdd6df1735bfc77e10998442b3}{findPlayerIdents}}(cv::Mat preparedFrame,}
+\DoxyCodeLine{35                                            \textcolor{keywordtype}{int} numOfEdges = RECTANGLES,}
+\DoxyCodeLine{36                                            \textcolor{keywordtype}{double} aspectLow = ASPECT\_RATIO\_LOW,}
+\DoxyCodeLine{37                                            \textcolor{keywordtype}{double} aspectHigh = ASPECT\_RATIO\_HIGH);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{44     cv::Mat \mbox{\hyperlink{class_game_controller_acde1f4fe64d5f7d3b1c2e5ccee0fdc51}{getPreparedFrame}}(cv::Mat rawFrame);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_game_controller_a2a937541a3ffd278975215863054b9c4}{determinePlayerIdentNumber}}(cv::Mat preparedFrame, cv::Rect playerIdentCords);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{60     cv::Mat \mbox{\hyperlink{class_game_controller_a10e55dce9a1b8d8e3ea199e13ad50daf}{getDifferenceMatrix}}(cv::Mat stopped, cv::Mat current);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{68     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_game_controller_a71c874fd5595342295a689270c14825a}{calcDiffBetweenMatrixesPercentage}}(cv::Mat stopped, cv::Mat diffMatrix);}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{int} *getThresh1();}
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} setThresh1(\textcolor{keywordtype}{int} thresh1);}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73     \textcolor{keywordtype}{int} *getThresh2();}
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} setThresh2(\textcolor{keywordtype}{int} thresh2);}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{int} *getArea();}
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} setArea(\textcolor{keywordtype}{int} area);}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{keywordtype}{int} *getKernelWidth();}
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} setKernelWidth(\textcolor{keywordtype}{int} kernelWidth);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \textcolor{keywordtype}{int} *getKernelHeight();}
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} setKernelHeight(\textcolor{keywordtype}{int} kernelHeight);}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85     cv::Mat getKernel();}
+\DoxyCodeLine{86     \textcolor{keywordtype}{void} setKernel(cv::Mat kernel);}
+\DoxyCodeLine{87 \};}
+
+\end{DoxyCode}

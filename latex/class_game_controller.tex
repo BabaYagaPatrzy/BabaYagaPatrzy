@@ -1,0 +1,166 @@
+\hypertarget{class_game_controller}{}\doxysection{Game\+Controller Class Reference}
+\label{class_game_controller}\index{GameController@{GameController}}
+
+
+Klasa służąca do wykonywania niskopoziomowych operacji dla klasy \mbox{\hyperlink{class_game}{Game}} związanych między innymi z preprocessingiem.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Controller.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_controller_a7d72ff3f639acb68578e20fee3649b42}\label{class_game_controller_a7d72ff3f639acb68578e20fee3649b42}} 
+{\bfseries Game\+Controller} ()
+\begin{DoxyCompactList}\small\item\em Konstruktora kontrolera gry. \end{DoxyCompactList}\item 
+std\+::vector$<$ cv\+::\+Rect $>$ \mbox{\hyperlink{class_game_controller_a385b7efdd6df1735bfc77e10998442b3}{find\+Player\+Idents}} (cv\+::\+Mat prepared\+Frame, int num\+Of\+Edges=RECTANGLES, double aspect\+Low=ASPECT\+\_\+\+RATIO\+\_\+\+LOW, double aspect\+High=ASPECT\+\_\+\+RATIO\+\_\+\+HIGH)
+\begin{DoxyCompactList}\small\item\em Umożliwia wyszukiwanie. \end{DoxyCompactList}\item 
+cv\+::\+Mat \mbox{\hyperlink{class_game_controller_acde1f4fe64d5f7d3b1c2e5ccee0fdc51}{get\+Prepared\+Frame}} (cv\+::\+Mat raw\+Frame)
+\begin{DoxyCompactList}\small\item\em Wykonuje preprocessing na zadanej klatce. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_controller_a2a937541a3ffd278975215863054b9c4}{determine\+Player\+Ident\+Number}} (cv\+::\+Mat prepared\+Frame, cv\+::\+Rect player\+Ident\+Cords)
+\begin{DoxyCompactList}\small\item\em Określa identyfikator gracza (numer 1 -\/ 14). \end{DoxyCompactList}\item 
+cv\+::\+Mat \mbox{\hyperlink{class_game_controller_a10e55dce9a1b8d8e3ea199e13ad50daf}{get\+Difference\+Matrix}} (cv\+::\+Mat stopped, cv\+::\+Mat current)
+\begin{DoxyCompactList}\small\item\em Zwraca klatkę różnicową między zadanymi klatkami. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_game_controller_a71c874fd5595342295a689270c14825a}{calc\+Diff\+Between\+Matrixes\+Percentage}} (cv\+::\+Mat stopped, cv\+::\+Mat diff\+Matrix)
+\begin{DoxyCompactList}\small\item\em Oblicza procent czarnych pikseli w stosunku do wszystkich pikseli. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_controller_adbca76d48318811a44ad75065eab6516}\label{class_game_controller_adbca76d48318811a44ad75065eab6516}} 
+int $\ast$ {\bfseries get\+Thresh1} ()
+\item 
+\mbox{\Hypertarget{class_game_controller_a44d338c70bd6352d214728b93ae29864}\label{class_game_controller_a44d338c70bd6352d214728b93ae29864}} 
+void {\bfseries set\+Thresh1} (int thresh1)
+\item 
+\mbox{\Hypertarget{class_game_controller_a754eebf28d5482d5a5331150ff5b5424}\label{class_game_controller_a754eebf28d5482d5a5331150ff5b5424}} 
+int $\ast$ {\bfseries get\+Thresh2} ()
+\item 
+\mbox{\Hypertarget{class_game_controller_a09fe636d1536ac0f86e41357335dfb1f}\label{class_game_controller_a09fe636d1536ac0f86e41357335dfb1f}} 
+void {\bfseries set\+Thresh2} (int thresh2)
+\item 
+\mbox{\Hypertarget{class_game_controller_a5e34a76d81131e3c328d65bc59fb3131}\label{class_game_controller_a5e34a76d81131e3c328d65bc59fb3131}} 
+int $\ast$ {\bfseries get\+Area} ()
+\item 
+\mbox{\Hypertarget{class_game_controller_a208c227c6993c889f02a51d1f954758f}\label{class_game_controller_a208c227c6993c889f02a51d1f954758f}} 
+void {\bfseries set\+Area} (int area)
+\item 
+\mbox{\Hypertarget{class_game_controller_ad51ed2d5e1168d1f1f083e6cf32ac4db}\label{class_game_controller_ad51ed2d5e1168d1f1f083e6cf32ac4db}} 
+int $\ast$ {\bfseries get\+Kernel\+Width} ()
+\item 
+\mbox{\Hypertarget{class_game_controller_a9d016d1b93a73761aa35b707e118c799}\label{class_game_controller_a9d016d1b93a73761aa35b707e118c799}} 
+void {\bfseries set\+Kernel\+Width} (int kernel\+Width)
+\item 
+\mbox{\Hypertarget{class_game_controller_ab8ea75ade0d37f95f381f9bd6e551102}\label{class_game_controller_ab8ea75ade0d37f95f381f9bd6e551102}} 
+int $\ast$ {\bfseries get\+Kernel\+Height} ()
+\item 
+\mbox{\Hypertarget{class_game_controller_a8ec587737401bd8d33807d6394920975}\label{class_game_controller_a8ec587737401bd8d33807d6394920975}} 
+void {\bfseries set\+Kernel\+Height} (int kernel\+Height)
+\item 
+\mbox{\Hypertarget{class_game_controller_a443e227956673854209c23faf964c91b}\label{class_game_controller_a443e227956673854209c23faf964c91b}} 
+cv\+::\+Mat {\bfseries get\+Kernel} ()
+\item 
+\mbox{\Hypertarget{class_game_controller_af8f91c2d65d5d5708608c274950c3f48}\label{class_game_controller_af8f91c2d65d5d5708608c274950c3f48}} 
+void {\bfseries set\+Kernel} (cv\+::\+Mat kernel)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa służąca do wykonywania niskopoziomowych operacji dla klasy \mbox{\hyperlink{class_game}{Game}} związanych między innymi z preprocessingiem. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_controller_a71c874fd5595342295a689270c14825a}\label{class_game_controller_a71c874fd5595342295a689270c14825a}} 
+\index{GameController@{GameController}!calcDiffBetweenMatrixesPercentage@{calcDiffBetweenMatrixesPercentage}}
+\index{calcDiffBetweenMatrixesPercentage@{calcDiffBetweenMatrixesPercentage}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{calcDiffBetweenMatrixesPercentage()}{calcDiffBetweenMatrixesPercentage()}}
+{\footnotesize\ttfamily double Game\+Controller\+::calc\+Diff\+Between\+Matrixes\+Percentage (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{stopped,  }\item[{cv\+::\+Mat}]{diff\+Matrix }\end{DoxyParamCaption})}
+
+
+
+Oblicza procent czarnych pikseli w stosunku do wszystkich pikseli. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stopped} & przetworzona klatka \\
+\hline
+{\em diff\+Matrix} & klatka różnicowa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Stosunek procentowy czarnych pikseli / wszystkie piksele 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_controller_a2a937541a3ffd278975215863054b9c4}\label{class_game_controller_a2a937541a3ffd278975215863054b9c4}} 
+\index{GameController@{GameController}!determinePlayerIdentNumber@{determinePlayerIdentNumber}}
+\index{determinePlayerIdentNumber@{determinePlayerIdentNumber}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{determinePlayerIdentNumber()}{determinePlayerIdentNumber()}}
+{\footnotesize\ttfamily int Game\+Controller\+::determine\+Player\+Ident\+Number (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{prepared\+Frame,  }\item[{cv\+::\+Rect}]{player\+Ident\+Cords }\end{DoxyParamCaption})}
+
+
+
+Określa identyfikator gracza (numer 1 -\/ 14). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prepared\+Frame} & przetworzona klatka \\
+\hline
+{\em player\+Ident\+Cords} & współrzędne gracza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zwraca znaleziony identyfikator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_controller_a385b7efdd6df1735bfc77e10998442b3}\label{class_game_controller_a385b7efdd6df1735bfc77e10998442b3}} 
+\index{GameController@{GameController}!findPlayerIdents@{findPlayerIdents}}
+\index{findPlayerIdents@{findPlayerIdents}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{findPlayerIdents()}{findPlayerIdents()}}
+{\footnotesize\ttfamily vector$<$ Rect $>$ Game\+Controller\+::find\+Player\+Idents (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{prepared\+Frame,  }\item[{int}]{num\+Of\+Edges = {\ttfamily RECTANGLES},  }\item[{double}]{aspect\+Low = {\ttfamily ASPECT\+\_\+RATIO\+\_\+LOW},  }\item[{double}]{aspect\+High = {\ttfamily ASPECT\+\_\+RATIO\+\_\+HIGH} }\end{DoxyParamCaption})}
+
+
+
+Umożliwia wyszukiwanie. 
+
+\begin{DoxyReturn}{Returns}
+Zwraca wektor znalezionych współrzędnych plakietek. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_controller_a10e55dce9a1b8d8e3ea199e13ad50daf}\label{class_game_controller_a10e55dce9a1b8d8e3ea199e13ad50daf}} 
+\index{GameController@{GameController}!getDifferenceMatrix@{getDifferenceMatrix}}
+\index{getDifferenceMatrix@{getDifferenceMatrix}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{getDifferenceMatrix()}{getDifferenceMatrix()}}
+{\footnotesize\ttfamily Mat Game\+Controller\+::get\+Difference\+Matrix (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{stopped,  }\item[{cv\+::\+Mat}]{current }\end{DoxyParamCaption})}
+
+
+
+Zwraca klatkę różnicową między zadanymi klatkami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stopped} & klatka na stopie \\
+\hline
+{\em current} & aktualna klatka \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Klatka różnicowa 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_controller_acde1f4fe64d5f7d3b1c2e5ccee0fdc51}\label{class_game_controller_acde1f4fe64d5f7d3b1c2e5ccee0fdc51}} 
+\index{GameController@{GameController}!getPreparedFrame@{getPreparedFrame}}
+\index{getPreparedFrame@{getPreparedFrame}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{getPreparedFrame()}{getPreparedFrame()}}
+{\footnotesize\ttfamily Mat Game\+Controller\+::get\+Prepared\+Frame (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{raw\+Frame }\end{DoxyParamCaption})}
+
+
+
+Wykonuje preprocessing na zadanej klatce. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Frame} & nieprzetworzona klatka \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zwraca przetworzoną klatkę. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Controller.\+hpp\item 
+Game\+Controller.\+cpp\end{DoxyCompactItemize}

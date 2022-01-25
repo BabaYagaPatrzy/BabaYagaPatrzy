@@ -1,0 +1,109 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+Reprezentacja gracza w grze.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a164f7b33a61861a7b9208d93cc635873}{Player}} (int id, cv\+::\+Rect \&stopped\+Player\+Ident)
+\begin{DoxyCompactList}\small\item\em Konstrukuje gracza gdy znamy jego id oraz współrzędne. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}} 
+{\bfseries Player} ()
+\begin{DoxyCompactList}\small\item\em Konstruuje gracza gdy nie znamy jego danych. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ad1938cea10d8eb27deefb23ba22d83a7}\label{class_player_ad1938cea10d8eb27deefb23ba22d83a7}} 
+cv\+::\+Mat {\bfseries get\+Stopped\+Mat} () const
+\item 
+\mbox{\Hypertarget{class_player_ab93980bca5d4f1a454a82154a4d96ad1}\label{class_player_ab93980bca5d4f1a454a82154a4d96ad1}} 
+cv\+::\+Mat {\bfseries get\+Current\+Mat} () const
+\item 
+\mbox{\Hypertarget{class_player_ad319401e93785643d58512e5fd5f5f5b}\label{class_player_ad319401e93785643d58512e5fd5f5f5b}} 
+void {\bfseries set\+Current\+Mat} (const cv\+::\+Mat \&current\+Mat)
+\item 
+\mbox{\Hypertarget{class_player_a525f913fc235e9334b816255c205e7ee}\label{class_player_a525f913fc235e9334b816255c205e7ee}} 
+void {\bfseries set\+Stopped\+Mat} (const cv\+::\+Mat \&stopped\+Mat)
+\item 
+\mbox{\Hypertarget{class_player_ae5e73c4b965ffa4d69eeedc2e31f8c5d}\label{class_player_ae5e73c4b965ffa4d69eeedc2e31f8c5d}} 
+void {\bfseries set\+Alive} (bool alive)
+\item 
+\mbox{\Hypertarget{class_player_a7c8b5354b4343abe21e0eb1b7c44185b}\label{class_player_a7c8b5354b4343abe21e0eb1b7c44185b}} 
+cv\+::\+Rect {\bfseries get\+Stopped\+Player\+Ident} () const
+\item 
+\mbox{\Hypertarget{class_player_a287e3d9108a7629718bd3e486ee62ab1}\label{class_player_a287e3d9108a7629718bd3e486ee62ab1}} 
+void {\bfseries set\+Stopped\+Player\+Ident} (cv\+::\+Rect \&stopped\+Player\+Ident)
+\item 
+void \mbox{\hyperlink{class_player_a7d1afd8b59c37da787132f84dbee27ab}{draw\+Player}} (cv\+::\+Mat \&output)
+\begin{DoxyCompactList}\small\item\em Rysuje gracza na zadanej klatce. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a02b803a2715f524998a2de05d23ca21e}{draw\+Player\+Id}} (cv\+::\+Mat \&output)
+\begin{DoxyCompactList}\small\item\em Rysuje id gracza nad jego obrysem. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a4c6b3f8ccd34d9c06518d6d9cf7aa9da}\label{class_player_a4c6b3f8ccd34d9c06518d6d9cf7aa9da}} 
+cv\+::\+Mat {\bfseries get\+Player\+Hitbox} (cv\+::\+Mat \&input)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reprezentacja gracza w grze. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_a164f7b33a61861a7b9208d93cc635873}\label{class_player_a164f7b33a61861a7b9208d93cc635873}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{cv\+::\+Rect \&}]{stopped\+Player\+Ident }\end{DoxyParamCaption})}
+
+
+
+Konstrukuje gracza gdy znamy jego id oraz współrzędne. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id gracz \\
+\hline
+{\em stopped\+Player\+Ident} & współrzędne gracza \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_a7d1afd8b59c37da787132f84dbee27ab}\label{class_player_a7d1afd8b59c37da787132f84dbee27ab}} 
+\index{Player@{Player}!drawPlayer@{drawPlayer}}
+\index{drawPlayer@{drawPlayer}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{drawPlayer()}{drawPlayer()}}
+{\footnotesize\ttfamily void Player\+::draw\+Player (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{output }\end{DoxyParamCaption})}
+
+
+
+Rysuje gracza na zadanej klatce. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & klatka wyjściowa \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a02b803a2715f524998a2de05d23ca21e}\label{class_player_a02b803a2715f524998a2de05d23ca21e}} 
+\index{Player@{Player}!drawPlayerId@{drawPlayerId}}
+\index{drawPlayerId@{drawPlayerId}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{drawPlayerId()}{drawPlayerId()}}
+{\footnotesize\ttfamily void Player\+::draw\+Player\+Id (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{output }\end{DoxyParamCaption})}
+
+
+
+Rysuje id gracza nad jego obrysem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & klatka wyjściowa \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Player.\+hpp\item 
+Player.\+cpp\end{DoxyCompactItemize}

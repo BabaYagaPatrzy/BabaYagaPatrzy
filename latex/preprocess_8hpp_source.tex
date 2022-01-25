@@ -1,0 +1,43 @@
+\hypertarget{preprocess_8hpp_source}{}\doxysection{preprocess.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}opencv2/opencv.hpp"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}opencv2/highgui.hpp"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}opencv2/imgproc.hpp"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_preprocess}{Preprocess}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \textcolor{keyword}{static} cv::Mat \mbox{\hyperlink{class_preprocess_a17ec49d2aafa0e3e4745180221776039}{prepareFrame}}(cv::Mat input, \textcolor{keywordtype}{int} thresh1, \textcolor{keywordtype}{int} thresh2, cv::Mat kernel);}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{29     \textcolor{keyword}{static} cv::Mat \mbox{\hyperlink{class_preprocess_a45480ff46bac220390588afefaf1a10b}{cutMatrix}}(cv::Mat input, cv::Rect dimensions, cv::Rect coordinates);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{36     \textcolor{keyword}{static} cv::Point2f *\mbox{\hyperlink{class_preprocess_a109c5def8aa697eb3b0c285bc6d78da0}{convertRectToPoint2f}}(cv::Rect rect);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{44     \textcolor{keyword}{static} cv::Mat \mbox{\hyperlink{class_preprocess_a3fd7f0fbd0290700bede24201404d6dd}{getWarpIdent}}(cv::Mat inputImage, cv::Rect rect);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{54     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_preprocess_a8c6b38d39dfab6214b212f37da370bb8}{displayWarpedImages}}(cv::Mat input, std::vector<cv::Rect> idents, \textcolor{keywordtype}{int} thresh1, \textcolor{keywordtype}{int} thresh2);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{64     \textcolor{keyword}{static} std::vector<cv::Rect> \mbox{\hyperlink{class_preprocess_a957de8a541bcb4cb7b3a816670fe8379}{findIdents}}(std::vector<std::vector<cv::Point>> contours, \textcolor{keywordtype}{int} numOfEdges, \textcolor{keywordtype}{double} aspectLow, \textcolor{keywordtype}{double} aspectHigh);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{73     \textcolor{keyword}{static} std::vector<std::vector<cv::Point>> \mbox{\hyperlink{class_preprocess_a2f3e998976fc1608fa675447714bc20a}{findAllClosedPolys}}(cv::Mat input, \textcolor{comment}{/* TODO */} cv::Mat output, \textcolor{comment}{/* TODO */} \textcolor{keywordtype}{int} area);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{82     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_preprocess_a1e97ee1d91bc80b38961ecb3f684f296}{determineNumber}}(cv::Mat wrappedImage, \textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{89     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_preprocess_a10163d88f7b37d06ad5e8d0cdb1131ca}{calculateAvgColorInRect}}(cv::Mat rect);}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{98     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_preprocess_acdef9e8c3d50015edaf648d121310373}{downscaleMovie}}(std::string movieName, \textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height);}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{106     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_preprocess_ac65a3d545f04990fa38ec0f580262cca}{isBlack}}(\textcolor{keywordtype}{int} avgColor);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{114     \textcolor{keyword}{static} cv::Mat \mbox{\hyperlink{class_preprocess_aa7ebfafcce4a61096a02acb1ae9bdf58}{getRectFromMatrix}}(cv::Mat matrix, cv::Rect rect);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{124     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_preprocess_ac3a86c437ce604fc010cfc4dbf351edb}{canBeCompared}}(cv::Mat first, cv::Mat second);}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{132     \textcolor{keyword}{static} cv::Mat \mbox{\hyperlink{class_preprocess_a71f7ebc33f9fd391521b08b10be5a8fc}{getDifferenceMatrix}}(cv::Mat first, cv::Mat second);}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{141     \textcolor{keyword}{static} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_preprocess_aed2f004f75a57bce94171e7a7926530d}{calculateDifferencePercentage}}(cv::Mat first, cv::Mat diff, \textcolor{keywordtype}{int} limit = 10);}
+\DoxyCodeLine{142 \};}
+
+\end{DoxyCode}

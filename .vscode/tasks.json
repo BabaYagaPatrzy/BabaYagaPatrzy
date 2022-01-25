@@ -1,0 +1,9 @@
+{
+    "tasks": [
+        {
+            "label": "Run without DBG",
+            "type": "shell",
+            "command": "cd resources ; ../build/Debug/BabaYaga.exe"
+        }
+    ]
+}
