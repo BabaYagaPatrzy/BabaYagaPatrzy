@@ -12,28 +12,82 @@ Klasa gry służąca do kontroli logiki oraz wyświetlaniu stanu gry na odpowied
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04}\label{class_game_a7f57a7a8408e554d0a72882c287e1d04}} 
-enum \mbox{\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State}} \{ {\bfseries INIT}
-, {\bfseries GREEN}
-, {\bfseries YELLOW}
-, {\bfseries RED}
+enum \mbox{\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State}} \{ \mbox{\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04a66614c93cf9663747fbd75990390c9d6}{INIT}}
+, \mbox{\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04a343ace69d354f4aa53696c5d743f27f9}{GREEN}}
+, \mbox{\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04a62404c329a1dde92b3da6f9bfa4d142c}{YELLOW}}
+, \mbox{\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04abfe2d895531350e9cf783dedc5273000}{RED}}
  \}
 \begin{DoxyCompactList}\small\item\em Możliwe stany w jakich znajdować się może gra. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_game_a2f767075dc1af8304ec50f0560df64f2}\label{class_game_a2f767075dc1af8304ec50f0560df64f2}} 
-void {\bfseries game\+Start} ()
+void \mbox{\hyperlink{class_game_a2f767075dc1af8304ec50f0560df64f2}{game\+Start}} ()
 \begin{DoxyCompactList}\small\item\em Pętla gry. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_game_a28c22c3fa641d870f8ae659c6605353a}\label{class_game_a28c22c3fa641d870f8ae659c6605353a}} 
-{\bfseries Game} (int difficulty)
+\mbox{\hyperlink{class_game_a28c22c3fa641d870f8ae659c6605353a}{Game}} (int difficulty)
 \begin{DoxyCompactList}\small\item\em Konstruktor gry. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Klasa gry służąca do kontroli logiki oraz wyświetlaniu stanu gry na odpowiednich okienkach. 
 
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04}\label{class_game_a7f57a7a8408e554d0a72882c287e1d04}} 
+\index{Game@{Game}!GameState@{GameState}}
+\index{GameState@{GameState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{GameState}{GameState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04}{Game\+::\+Game\+State}}}
+
+
+
+Możliwe stany w jakich znajdować się może gra. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INIT@{INIT}!Game@{Game}}\index{Game@{Game}!INIT@{INIT}}}\mbox{\Hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04a66614c93cf9663747fbd75990390c9d6}\label{class_game_a7f57a7a8408e554d0a72882c287e1d04a66614c93cf9663747fbd75990390c9d6}} 
+INIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GREEN@{GREEN}!Game@{Game}}\index{Game@{Game}!GREEN@{GREEN}}}\mbox{\Hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04a343ace69d354f4aa53696c5d743f27f9}\label{class_game_a7f57a7a8408e554d0a72882c287e1d04a343ace69d354f4aa53696c5d743f27f9}} 
+GREEN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{YELLOW@{YELLOW}!Game@{Game}}\index{Game@{Game}!YELLOW@{YELLOW}}}\mbox{\Hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04a62404c329a1dde92b3da6f9bfa4d142c}\label{class_game_a7f57a7a8408e554d0a72882c287e1d04a62404c329a1dde92b3da6f9bfa4d142c}} 
+YELLOW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RED@{RED}!Game@{Game}}\index{Game@{Game}!RED@{RED}}}\mbox{\Hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04abfe2d895531350e9cf783dedc5273000}\label{class_game_a7f57a7a8408e554d0a72882c287e1d04abfe2d895531350e9cf783dedc5273000}} 
+RED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_a28c22c3fa641d870f8ae659c6605353a}\label{class_game_a28c22c3fa641d870f8ae659c6605353a}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{int}]{difficulty }\end{DoxyParamCaption})}
+
+
+
+Konstruktor gry. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a2f767075dc1af8304ec50f0560df64f2}\label{class_game_a2f767075dc1af8304ec50f0560df64f2}} 
+\index{Game@{Game}!gameStart@{gameStart}}
+\index{gameStart@{gameStart}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{gameStart()}{gameStart()}}
+{\footnotesize\ttfamily void Game\+::game\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pętla gry. 
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Game.\+hpp\item 
-Game.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{_game_8hpp}{Game.\+hpp}}\item 
+\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

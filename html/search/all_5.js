@@ -1,6 +1,27 @@
 var searchData=
 [
-  ['player_0',['Player',['../class_player.html',1,'Player'],['../class_player.html#a164f7b33a61861a7b9208d93cc635873',1,'Player::Player(int id, cv::Rect &amp;stoppedPlayerIdent)'],['../class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8',1,'Player::Player()']]],
-  ['prepareframe_1',['prepareFrame',['../class_preprocess.html#a17ec49d2aafa0e3e4745180221776039',1,'Preprocess']]],
-  ['preprocess_2',['Preprocess',['../class_preprocess.html',1,'']]]
+  ['game_0',['Game',['../class_game.html',1,'Game'],['../class_game.html#a28c22c3fa641d870f8ae659c6605353a',1,'Game::Game()']]],
+  ['game_2ecpp_1',['Game.cpp',['../_game_8cpp.html',1,'']]],
+  ['game_2ehpp_2',['Game.hpp',['../_game_8hpp.html',1,'']]],
+  ['gamecontroller_3',['GameController',['../class_game_controller.html',1,'GameController'],['../class_game_controller.html#a7d72ff3f639acb68578e20fee3649b42',1,'GameController::GameController()']]],
+  ['gamecontroller_2ecpp_4',['GameController.cpp',['../_game_controller_8cpp.html',1,'']]],
+  ['gamecontroller_2ehpp_5',['GameController.hpp',['../_game_controller_8hpp.html',1,'']]],
+  ['gamestart_6',['gameStart',['../class_game.html#a2f767075dc1af8304ec50f0560df64f2',1,'Game']]],
+  ['gamestate_7',['GameState',['../class_game.html#a7f57a7a8408e554d0a72882c287e1d04',1,'Game']]],
+  ['getarea_8',['getArea',['../class_game_controller.html#a5e34a76d81131e3c328d65bc59fb3131',1,'GameController']]],
+  ['getcurrentmat_9',['getCurrentMat',['../class_player.html#ab93980bca5d4f1a454a82154a4d96ad1',1,'Player']]],
+  ['getdifferencematrix_10',['getDifferenceMatrix',['../class_game_controller.html#a10e55dce9a1b8d8e3ea199e13ad50daf',1,'GameController::getDifferenceMatrix()'],['../class_preprocess.html#a71f7ebc33f9fd391521b08b10be5a8fc',1,'Preprocess::getDifferenceMatrix()']]],
+  ['getkernel_11',['getKernel',['../class_game_controller.html#a443e227956673854209c23faf964c91b',1,'GameController']]],
+  ['getkernelheight_12',['getKernelHeight',['../class_game_controller.html#ab8ea75ade0d37f95f381f9bd6e551102',1,'GameController']]],
+  ['getkernelwidth_13',['getKernelWidth',['../class_game_controller.html#ad51ed2d5e1168d1f1f083e6cf32ac4db',1,'GameController']]],
+  ['getplayerhitbox_14',['getPlayerHitbox',['../class_player.html#a4c6b3f8ccd34d9c06518d6d9cf7aa9da',1,'Player']]],
+  ['getpreparedframe_15',['getPreparedFrame',['../class_game_controller.html#acde1f4fe64d5f7d3b1c2e5ccee0fdc51',1,'GameController']]],
+  ['getrectfrommatrix_16',['getRectFromMatrix',['../class_preprocess.html#aa7ebfafcce4a61096a02acb1ae9bdf58',1,'Preprocess']]],
+  ['getstoppedmat_17',['getStoppedMat',['../class_player.html#ad1938cea10d8eb27deefb23ba22d83a7',1,'Player']]],
+  ['getstoppedplayerident_18',['getStoppedPlayerIdent',['../class_player.html#a7c8b5354b4343abe21e0eb1b7c44185b',1,'Player']]],
+  ['getthresh1_19',['getThresh1',['../class_game_controller.html#adbca76d48318811a44ad75065eab6516',1,'GameController']]],
+  ['getthresh2_20',['getThresh2',['../class_game_controller.html#a754eebf28d5482d5a5331150ff5b5424',1,'GameController']]],
+  ['getwarpident_21',['getWarpIdent',['../class_preprocess.html#a3fd7f0fbd0290700bede24201404d6dd',1,'Preprocess']]],
+  ['green_22',['GREEN',['../class_game.html#a7f57a7a8408e554d0a72882c287e1d04a343ace69d354f4aa53696c5d743f27f9',1,'Game']]],
+  ['green_5fframes_23',['GREEN_FRAMES',['../settings_8hpp.html#a6cf0c20e19e70cad0e35b136dc30ce1c',1,'settings.hpp']]]
 ];

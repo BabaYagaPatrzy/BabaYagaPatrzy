@@ -12,10 +12,9 @@ Klasa służąca do wykonywania niskopoziomowych operacji dla klasy \mbox{\hyper
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_game_controller_a7d72ff3f639acb68578e20fee3649b42}\label{class_game_controller_a7d72ff3f639acb68578e20fee3649b42}} 
-{\bfseries Game\+Controller} ()
+\mbox{\hyperlink{class_game_controller_a7d72ff3f639acb68578e20fee3649b42}{Game\+Controller}} ()
 \begin{DoxyCompactList}\small\item\em Konstruktora kontrolera gry. \end{DoxyCompactList}\item 
-std\+::vector$<$ cv\+::\+Rect $>$ \mbox{\hyperlink{class_game_controller_a385b7efdd6df1735bfc77e10998442b3}{find\+Player\+Idents}} (cv\+::\+Mat prepared\+Frame, int num\+Of\+Edges=RECTANGLES, double aspect\+Low=ASPECT\+\_\+\+RATIO\+\_\+\+LOW, double aspect\+High=ASPECT\+\_\+\+RATIO\+\_\+\+HIGH)
+std\+::vector$<$ cv\+::\+Rect $>$ \mbox{\hyperlink{class_game_controller_a385b7efdd6df1735bfc77e10998442b3}{find\+Player\+Idents}} (cv\+::\+Mat prepared\+Frame, int num\+Of\+Edges=\mbox{\hyperlink{settings_8hpp_acc7898a4c2efcd589bdab792216199ee}{RECTANGLES}}, double aspect\+Low=\mbox{\hyperlink{settings_8hpp_a2930e80148251a79663770a5aee6bebe}{ASPECT\+\_\+\+RATIO\+\_\+\+LOW}}, double aspect\+High=\mbox{\hyperlink{settings_8hpp_a04ec2143684ae8a6dc120e5350cd589b}{ASPECT\+\_\+\+RATIO\+\_\+\+HIGH}})
 \begin{DoxyCompactList}\small\item\em Umożliwia wyszukiwanie. \end{DoxyCompactList}\item 
 cv\+::\+Mat \mbox{\hyperlink{class_game_controller_acde1f4fe64d5f7d3b1c2e5ccee0fdc51}{get\+Prepared\+Frame}} (cv\+::\+Mat raw\+Frame)
 \begin{DoxyCompactList}\small\item\em Wykonuje preprocessing na zadanej klatce. \end{DoxyCompactList}\item 
@@ -25,46 +24,47 @@ cv\+::\+Mat \mbox{\hyperlink{class_game_controller_a10e55dce9a1b8d8e3ea199e13ad5
 \begin{DoxyCompactList}\small\item\em Zwraca klatkę różnicową między zadanymi klatkami. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{class_game_controller_a71c874fd5595342295a689270c14825a}{calc\+Diff\+Between\+Matrixes\+Percentage}} (cv\+::\+Mat stopped, cv\+::\+Mat diff\+Matrix)
 \begin{DoxyCompactList}\small\item\em Oblicza procent czarnych pikseli w stosunku do wszystkich pikseli. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_game_controller_adbca76d48318811a44ad75065eab6516}\label{class_game_controller_adbca76d48318811a44ad75065eab6516}} 
-int $\ast$ {\bfseries get\+Thresh1} ()
+int $\ast$ \mbox{\hyperlink{class_game_controller_adbca76d48318811a44ad75065eab6516}{get\+Thresh1}} ()
 \item 
-\mbox{\Hypertarget{class_game_controller_a44d338c70bd6352d214728b93ae29864}\label{class_game_controller_a44d338c70bd6352d214728b93ae29864}} 
-void {\bfseries set\+Thresh1} (int thresh1)
+void \mbox{\hyperlink{class_game_controller_a44d338c70bd6352d214728b93ae29864}{set\+Thresh1}} (int thresh1)
 \item 
-\mbox{\Hypertarget{class_game_controller_a754eebf28d5482d5a5331150ff5b5424}\label{class_game_controller_a754eebf28d5482d5a5331150ff5b5424}} 
-int $\ast$ {\bfseries get\+Thresh2} ()
+int $\ast$ \mbox{\hyperlink{class_game_controller_a754eebf28d5482d5a5331150ff5b5424}{get\+Thresh2}} ()
 \item 
-\mbox{\Hypertarget{class_game_controller_a09fe636d1536ac0f86e41357335dfb1f}\label{class_game_controller_a09fe636d1536ac0f86e41357335dfb1f}} 
-void {\bfseries set\+Thresh2} (int thresh2)
+void \mbox{\hyperlink{class_game_controller_a09fe636d1536ac0f86e41357335dfb1f}{set\+Thresh2}} (int thresh2)
 \item 
-\mbox{\Hypertarget{class_game_controller_a5e34a76d81131e3c328d65bc59fb3131}\label{class_game_controller_a5e34a76d81131e3c328d65bc59fb3131}} 
-int $\ast$ {\bfseries get\+Area} ()
+int $\ast$ \mbox{\hyperlink{class_game_controller_a5e34a76d81131e3c328d65bc59fb3131}{get\+Area}} ()
 \item 
-\mbox{\Hypertarget{class_game_controller_a208c227c6993c889f02a51d1f954758f}\label{class_game_controller_a208c227c6993c889f02a51d1f954758f}} 
-void {\bfseries set\+Area} (int area)
+void \mbox{\hyperlink{class_game_controller_a208c227c6993c889f02a51d1f954758f}{set\+Area}} (int area)
 \item 
-\mbox{\Hypertarget{class_game_controller_ad51ed2d5e1168d1f1f083e6cf32ac4db}\label{class_game_controller_ad51ed2d5e1168d1f1f083e6cf32ac4db}} 
-int $\ast$ {\bfseries get\+Kernel\+Width} ()
+int $\ast$ \mbox{\hyperlink{class_game_controller_ad51ed2d5e1168d1f1f083e6cf32ac4db}{get\+Kernel\+Width}} ()
 \item 
-\mbox{\Hypertarget{class_game_controller_a9d016d1b93a73761aa35b707e118c799}\label{class_game_controller_a9d016d1b93a73761aa35b707e118c799}} 
-void {\bfseries set\+Kernel\+Width} (int kernel\+Width)
+void \mbox{\hyperlink{class_game_controller_a9d016d1b93a73761aa35b707e118c799}{set\+Kernel\+Width}} (int kernel\+Width)
 \item 
-\mbox{\Hypertarget{class_game_controller_ab8ea75ade0d37f95f381f9bd6e551102}\label{class_game_controller_ab8ea75ade0d37f95f381f9bd6e551102}} 
-int $\ast$ {\bfseries get\+Kernel\+Height} ()
+int $\ast$ \mbox{\hyperlink{class_game_controller_ab8ea75ade0d37f95f381f9bd6e551102}{get\+Kernel\+Height}} ()
 \item 
-\mbox{\Hypertarget{class_game_controller_a8ec587737401bd8d33807d6394920975}\label{class_game_controller_a8ec587737401bd8d33807d6394920975}} 
-void {\bfseries set\+Kernel\+Height} (int kernel\+Height)
+void \mbox{\hyperlink{class_game_controller_a8ec587737401bd8d33807d6394920975}{set\+Kernel\+Height}} (int kernel\+Height)
 \item 
-\mbox{\Hypertarget{class_game_controller_a443e227956673854209c23faf964c91b}\label{class_game_controller_a443e227956673854209c23faf964c91b}} 
-cv\+::\+Mat {\bfseries get\+Kernel} ()
+cv\+::\+Mat \mbox{\hyperlink{class_game_controller_a443e227956673854209c23faf964c91b}{get\+Kernel}} ()
 \item 
-\mbox{\Hypertarget{class_game_controller_af8f91c2d65d5d5708608c274950c3f48}\label{class_game_controller_af8f91c2d65d5d5708608c274950c3f48}} 
-void {\bfseries set\+Kernel} (cv\+::\+Mat kernel)
+void \mbox{\hyperlink{class_game_controller_af8f91c2d65d5d5708608c274950c3f48}{set\+Kernel}} (cv\+::\+Mat kernel)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Klasa służąca do wykonywania niskopoziomowych operacji dla klasy \mbox{\hyperlink{class_game}{Game}} związanych między innymi z preprocessingiem. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_controller_a7d72ff3f639acb68578e20fee3649b42}\label{class_game_controller_a7d72ff3f639acb68578e20fee3649b42}} 
+\index{GameController@{GameController}!GameController@{GameController}}
+\index{GameController@{GameController}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{GameController()}{GameController()}}
+{\footnotesize\ttfamily Game\+Controller\+::\+Game\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktora kontrolera gry. 
+
+
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_game_controller_a71c874fd5595342295a689270c14825a}\label{class_game_controller_a71c874fd5595342295a689270c14825a}} 
@@ -111,7 +111,7 @@ Zwraca znaleziony identyfikator
 \index{GameController@{GameController}!findPlayerIdents@{findPlayerIdents}}
 \index{findPlayerIdents@{findPlayerIdents}!GameController@{GameController}}
 \doxysubsubsection{\texorpdfstring{findPlayerIdents()}{findPlayerIdents()}}
-{\footnotesize\ttfamily vector$<$ Rect $>$ Game\+Controller\+::find\+Player\+Idents (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{prepared\+Frame,  }\item[{int}]{num\+Of\+Edges = {\ttfamily RECTANGLES},  }\item[{double}]{aspect\+Low = {\ttfamily ASPECT\+\_\+RATIO\+\_\+LOW},  }\item[{double}]{aspect\+High = {\ttfamily ASPECT\+\_\+RATIO\+\_\+HIGH} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily vector$<$ Rect $>$ Game\+Controller\+::find\+Player\+Idents (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{prepared\+Frame,  }\item[{int}]{num\+Of\+Edges = {\ttfamily \mbox{\hyperlink{settings_8hpp_acc7898a4c2efcd589bdab792216199ee}{RECTANGLES}}},  }\item[{double}]{aspect\+Low = {\ttfamily \mbox{\hyperlink{settings_8hpp_a2930e80148251a79663770a5aee6bebe}{ASPECT\+\_\+\+RATIO\+\_\+\+LOW}}},  }\item[{double}]{aspect\+High = {\ttfamily \mbox{\hyperlink{settings_8hpp_a04ec2143684ae8a6dc120e5350cd589b}{ASPECT\+\_\+\+RATIO\+\_\+\+HIGH}}} }\end{DoxyParamCaption})}
 
 
 
@@ -120,6 +120,12 @@ Umożliwia wyszukiwanie.
 \begin{DoxyReturn}{Returns}
 Zwraca wektor znalezionych współrzędnych plakietek. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_game_controller_a5e34a76d81131e3c328d65bc59fb3131}\label{class_game_controller_a5e34a76d81131e3c328d65bc59fb3131}} 
+\index{GameController@{GameController}!getArea@{getArea}}
+\index{getArea@{getArea}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{getArea()}{getArea()}}
+{\footnotesize\ttfamily int $\ast$ Game\+Controller\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_game_controller_a10e55dce9a1b8d8e3ea199e13ad50daf}\label{class_game_controller_a10e55dce9a1b8d8e3ea199e13ad50daf}} 
 \index{GameController@{GameController}!getDifferenceMatrix@{getDifferenceMatrix}}
 \index{getDifferenceMatrix@{getDifferenceMatrix}!GameController@{GameController}}
@@ -140,6 +146,24 @@ Zwraca klatkę różnicową między zadanymi klatkami.
 \begin{DoxyReturn}{Returns}
 Klatka różnicowa 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_game_controller_a443e227956673854209c23faf964c91b}\label{class_game_controller_a443e227956673854209c23faf964c91b}} 
+\index{GameController@{GameController}!getKernel@{getKernel}}
+\index{getKernel@{getKernel}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{getKernel()}{getKernel()}}
+{\footnotesize\ttfamily Mat Game\+Controller\+::get\+Kernel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_controller_ab8ea75ade0d37f95f381f9bd6e551102}\label{class_game_controller_ab8ea75ade0d37f95f381f9bd6e551102}} 
+\index{GameController@{GameController}!getKernelHeight@{getKernelHeight}}
+\index{getKernelHeight@{getKernelHeight}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{getKernelHeight()}{getKernelHeight()}}
+{\footnotesize\ttfamily int $\ast$ Game\+Controller\+::get\+Kernel\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_controller_ad51ed2d5e1168d1f1f083e6cf32ac4db}\label{class_game_controller_ad51ed2d5e1168d1f1f083e6cf32ac4db}} 
+\index{GameController@{GameController}!getKernelWidth@{getKernelWidth}}
+\index{getKernelWidth@{getKernelWidth}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{getKernelWidth()}{getKernelWidth()}}
+{\footnotesize\ttfamily int $\ast$ Game\+Controller\+::get\+Kernel\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_game_controller_acde1f4fe64d5f7d3b1c2e5ccee0fdc51}\label{class_game_controller_acde1f4fe64d5f7d3b1c2e5ccee0fdc51}} 
 \index{GameController@{GameController}!getPreparedFrame@{getPreparedFrame}}
 \index{getPreparedFrame@{getPreparedFrame}!GameController@{GameController}}
@@ -158,9 +182,57 @@ Wykonuje preprocessing na zadanej klatce.
 \begin{DoxyReturn}{Returns}
 Zwraca przetworzoną klatkę. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_game_controller_adbca76d48318811a44ad75065eab6516}\label{class_game_controller_adbca76d48318811a44ad75065eab6516}} 
+\index{GameController@{GameController}!getThresh1@{getThresh1}}
+\index{getThresh1@{getThresh1}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{getThresh1()}{getThresh1()}}
+{\footnotesize\ttfamily int $\ast$ Game\+Controller\+::get\+Thresh1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_controller_a754eebf28d5482d5a5331150ff5b5424}\label{class_game_controller_a754eebf28d5482d5a5331150ff5b5424}} 
+\index{GameController@{GameController}!getThresh2@{getThresh2}}
+\index{getThresh2@{getThresh2}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{getThresh2()}{getThresh2()}}
+{\footnotesize\ttfamily int $\ast$ Game\+Controller\+::get\+Thresh2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_controller_a208c227c6993c889f02a51d1f954758f}\label{class_game_controller_a208c227c6993c889f02a51d1f954758f}} 
+\index{GameController@{GameController}!setArea@{setArea}}
+\index{setArea@{setArea}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{setArea()}{setArea()}}
+{\footnotesize\ttfamily void Game\+Controller\+::set\+Area (\begin{DoxyParamCaption}\item[{int}]{area }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_controller_af8f91c2d65d5d5708608c274950c3f48}\label{class_game_controller_af8f91c2d65d5d5708608c274950c3f48}} 
+\index{GameController@{GameController}!setKernel@{setKernel}}
+\index{setKernel@{setKernel}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{setKernel()}{setKernel()}}
+{\footnotesize\ttfamily void Game\+Controller\+::set\+Kernel (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{kernel }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_controller_a8ec587737401bd8d33807d6394920975}\label{class_game_controller_a8ec587737401bd8d33807d6394920975}} 
+\index{GameController@{GameController}!setKernelHeight@{setKernelHeight}}
+\index{setKernelHeight@{setKernelHeight}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{setKernelHeight()}{setKernelHeight()}}
+{\footnotesize\ttfamily void Game\+Controller\+::set\+Kernel\+Height (\begin{DoxyParamCaption}\item[{int}]{kernel\+Height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_controller_a9d016d1b93a73761aa35b707e118c799}\label{class_game_controller_a9d016d1b93a73761aa35b707e118c799}} 
+\index{GameController@{GameController}!setKernelWidth@{setKernelWidth}}
+\index{setKernelWidth@{setKernelWidth}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{setKernelWidth()}{setKernelWidth()}}
+{\footnotesize\ttfamily void Game\+Controller\+::set\+Kernel\+Width (\begin{DoxyParamCaption}\item[{int}]{kernel\+Width }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_controller_a44d338c70bd6352d214728b93ae29864}\label{class_game_controller_a44d338c70bd6352d214728b93ae29864}} 
+\index{GameController@{GameController}!setThresh1@{setThresh1}}
+\index{setThresh1@{setThresh1}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{setThresh1()}{setThresh1()}}
+{\footnotesize\ttfamily void Game\+Controller\+::set\+Thresh1 (\begin{DoxyParamCaption}\item[{int}]{thresh1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_controller_a09fe636d1536ac0f86e41357335dfb1f}\label{class_game_controller_a09fe636d1536ac0f86e41357335dfb1f}} 
+\index{GameController@{GameController}!setThresh2@{setThresh2}}
+\index{setThresh2@{setThresh2}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{setThresh2()}{setThresh2()}}
+{\footnotesize\ttfamily void Game\+Controller\+::set\+Thresh2 (\begin{DoxyParamCaption}\item[{int}]{thresh2 }\end{DoxyParamCaption})}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Game\+Controller.\+hpp\item 
-Game\+Controller.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{_game_controller_8hpp}{Game\+Controller.\+hpp}}\item 
+\mbox{\hyperlink{_game_controller_8cpp}{Game\+Controller.\+cpp}}\end{DoxyCompactItemize}

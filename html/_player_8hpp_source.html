@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Baba Jaga Patrzy: Player.hpp Source File</title>
+<title>BabaYagaPatrzy: Player.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Baba Jaga Patrzy
+   <div id="projectname">BabaYagaPatrzy
    </div>
   </td>
  </tr>
@@ -65,7 +65,7 @@ $(function() {
   <div class="headertitle"><div class="title">Player.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="_player_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;opencv2/opencv.hpp&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;opencv2/highgui.hpp&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;opencv2/imgproc.hpp&quot;</span></div>
@@ -84,23 +84,31 @@ $(function() {
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_player.html#a164f7b33a61861a7b9208d93cc635873">   25</a></span>    <a class="code hl_function" href="class_player.html#a164f7b33a61861a7b9208d93cc635873">Player</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, cv::Rect &amp;stoppedPlayerIdent);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8">Player</a>();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    cv::Mat getStoppedMat() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    cv::Mat getCurrentMat() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> setCurrentMat(<span class="keyword">const</span> cv::Mat &amp;currentMat);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> setStoppedMat(<span class="keyword">const</span> cv::Mat &amp;stoppedMat);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> setAlive(<span class="keywordtype">bool</span> alive);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    cv::Rect getStoppedPlayerIdent() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> setStoppedPlayerIdent(cv::Rect &amp;stoppedPlayerIdent);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    cv::Mat <a class="code hl_function" href="class_player.html#ad1938cea10d8eb27deefb23ba22d83a7">getStoppedMat</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    cv::Mat <a class="code hl_function" href="class_player.html#ab93980bca5d4f1a454a82154a4d96ad1">getCurrentMat</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#ad319401e93785643d58512e5fd5f5f5b">setCurrentMat</a>(<span class="keyword">const</span> cv::Mat &amp;currentMat);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a525f913fc235e9334b816255c205e7ee">setStoppedMat</a>(<span class="keyword">const</span> cv::Mat &amp;stoppedMat);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#ae5e73c4b965ffa4d69eeedc2e31f8c5d">setAlive</a>(<span class="keywordtype">bool</span> alive);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    cv::Rect <a class="code hl_function" href="class_player.html#a7c8b5354b4343abe21e0eb1b7c44185b">getStoppedPlayerIdent</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a287e3d9108a7629718bd3e486ee62ab1">setStoppedPlayerIdent</a>(cv::Rect &amp;stoppedPlayerIdent);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a7d1afd8b59c37da787132f84dbee27ab">drawPlayer</a>(cv::Mat &amp;output);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a02b803a2715f524998a2de05d23ca21e">drawPlayerId</a>(cv::Mat &amp;output);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    cv::Mat getPlayerHitbox(cv::Mat &amp;input);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    cv::Mat <a class="code hl_function" href="class_player.html#a4c6b3f8ccd34d9c06518d6d9cf7aa9da">getPlayerHitbox</a>(cv::Mat &amp;input);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
 <div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Reprezentacja gracza w grze.</div><div class="ttdef"><b>Definition:</b> Player.hpp:10</div></div>
 <div class="ttc" id="aclass_player_html_a02b803a2715f524998a2de05d23ca21e"><div class="ttname"><a href="class_player.html#a02b803a2715f524998a2de05d23ca21e">Player::drawPlayerId</a></div><div class="ttdeci">void drawPlayerId(cv::Mat &amp;output)</div><div class="ttdoc">Rysuje id gracza nad jego obrysem.</div><div class="ttdef"><b>Definition:</b> Player.cpp:73</div></div>
 <div class="ttc" id="aclass_player_html_a164f7b33a61861a7b9208d93cc635873"><div class="ttname"><a href="class_player.html#a164f7b33a61861a7b9208d93cc635873">Player::Player</a></div><div class="ttdeci">Player(int id, cv::Rect &amp;stoppedPlayerIdent)</div><div class="ttdoc">Konstrukuje gracza gdy znamy jego id oraz współrzędne.</div></div>
+<div class="ttc" id="aclass_player_html_a287e3d9108a7629718bd3e486ee62ab1"><div class="ttname"><a href="class_player.html#a287e3d9108a7629718bd3e486ee62ab1">Player::setStoppedPlayerIdent</a></div><div class="ttdeci">void setStoppedPlayerIdent(cv::Rect &amp;stoppedPlayerIdent)</div><div class="ttdef"><b>Definition:</b> Player.cpp:93</div></div>
+<div class="ttc" id="aclass_player_html_a4c6b3f8ccd34d9c06518d6d9cf7aa9da"><div class="ttname"><a href="class_player.html#a4c6b3f8ccd34d9c06518d6d9cf7aa9da">Player::getPlayerHitbox</a></div><div class="ttdeci">cv::Mat getPlayerHitbox(cv::Mat &amp;input)</div><div class="ttdef"><b>Definition:</b> Player.cpp:98</div></div>
+<div class="ttc" id="aclass_player_html_a525f913fc235e9334b816255c205e7ee"><div class="ttname"><a href="class_player.html#a525f913fc235e9334b816255c205e7ee">Player::setStoppedMat</a></div><div class="ttdeci">void setStoppedMat(const cv::Mat &amp;stoppedMat)</div><div class="ttdef"><b>Definition:</b> Player.cpp:31</div></div>
+<div class="ttc" id="aclass_player_html_a7c8b5354b4343abe21e0eb1b7c44185b"><div class="ttname"><a href="class_player.html#a7c8b5354b4343abe21e0eb1b7c44185b">Player::getStoppedPlayerIdent</a></div><div class="ttdeci">cv::Rect getStoppedPlayerIdent() const</div><div class="ttdef"><b>Definition:</b> Player.cpp:42</div></div>
 <div class="ttc" id="aclass_player_html_a7d1afd8b59c37da787132f84dbee27ab"><div class="ttname"><a href="class_player.html#a7d1afd8b59c37da787132f84dbee27ab">Player::drawPlayer</a></div><div class="ttdeci">void drawPlayer(cv::Mat &amp;output)</div><div class="ttdoc">Rysuje gracza na zadanej klatce.</div><div class="ttdef"><b>Definition:</b> Player.cpp:47</div></div>
+<div class="ttc" id="aclass_player_html_ab93980bca5d4f1a454a82154a4d96ad1"><div class="ttname"><a href="class_player.html#ab93980bca5d4f1a454a82154a4d96ad1">Player::getCurrentMat</a></div><div class="ttdeci">cv::Mat getCurrentMat() const</div><div class="ttdef"><b>Definition:</b> Player.cpp:21</div></div>
+<div class="ttc" id="aclass_player_html_ad1938cea10d8eb27deefb23ba22d83a7"><div class="ttname"><a href="class_player.html#ad1938cea10d8eb27deefb23ba22d83a7">Player::getStoppedMat</a></div><div class="ttdeci">cv::Mat getStoppedMat() const</div><div class="ttdef"><b>Definition:</b> Player.cpp:16</div></div>
+<div class="ttc" id="aclass_player_html_ad319401e93785643d58512e5fd5f5f5b"><div class="ttname"><a href="class_player.html#ad319401e93785643d58512e5fd5f5f5b">Player::setCurrentMat</a></div><div class="ttdeci">void setCurrentMat(const cv::Mat &amp;currentMat)</div><div class="ttdef"><b>Definition:</b> Player.cpp:26</div></div>
+<div class="ttc" id="aclass_player_html_ae5e73c4b965ffa4d69eeedc2e31f8c5d"><div class="ttname"><a href="class_player.html#ae5e73c4b965ffa4d69eeedc2e31f8c5d">Player::setAlive</a></div><div class="ttdeci">void setAlive(bool alive)</div><div class="ttdef"><b>Definition:</b> Player.cpp:37</div></div>
 <div class="ttc" id="aclass_player_html_affe0cc3cb714f6deb4e62f0c0d3f1fd8"><div class="ttname"><a href="class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8">Player::Player</a></div><div class="ttdeci">Player()</div><div class="ttdoc">Konstruuje gracza gdy nie znamy jego danych.</div><div class="ttdef"><b>Definition:</b> Player.cpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

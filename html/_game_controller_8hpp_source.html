@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Baba Jaga Patrzy: GameController.hpp Source File</title>
+<title>BabaYagaPatrzy: GameController.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Baba Jaga Patrzy
+   <div id="projectname">BabaYagaPatrzy
    </div>
   </td>
  </tr>
@@ -65,15 +65,15 @@ $(function() {
   <div class="headertitle"><div class="title">GameController.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="_game_controller_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;opencv2/opencv.hpp&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;opencv2/highgui.hpp&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;opencv2/imgproc.hpp&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;math.h&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;iostream&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;preprocess.hpp&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;Player.hpp&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;settings.hpp&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="preprocess_8hpp.html">preprocess.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_player_8hpp.html">Player.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="settings_8hpp.html">settings.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_controller.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_game_controller.html">GameController</a></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
@@ -89,9 +89,9 @@ $(function() {
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="class_game_controller.html#a7d72ff3f639acb68578e20fee3649b42">GameController::GameController</a>();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    std::vector&lt;cv::Rect&gt; <a class="code hl_function" href="class_game_controller.html#a385b7efdd6df1735bfc77e10998442b3">findPlayerIdents</a>(cv::Mat preparedFrame,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                                           <span class="keywordtype">int</span> numOfEdges = RECTANGLES,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                                           <span class="keywordtype">double</span> aspectLow = ASPECT_RATIO_LOW,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                           <span class="keywordtype">double</span> aspectHigh = ASPECT_RATIO_HIGH);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                                           <span class="keywordtype">int</span> numOfEdges = <a class="code hl_define" href="settings_8hpp.html#acc7898a4c2efcd589bdab792216199ee">RECTANGLES</a>,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                                           <span class="keywordtype">double</span> aspectLow = <a class="code hl_define" href="settings_8hpp.html#a2930e80148251a79663770a5aee6bebe">ASPECT_RATIO_LOW</a>,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                           <span class="keywordtype">double</span> aspectHigh = <a class="code hl_define" href="settings_8hpp.html#a04ec2143684ae8a6dc120e5350cd589b">ASPECT_RATIO_HIGH</a>);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    cv::Mat <a class="code hl_function" href="class_game_controller.html#acde1f4fe64d5f7d3b1c2e5ccee0fdc51">getPreparedFrame</a>(cv::Mat rawFrame);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
@@ -101,31 +101,49 @@ $(function() {
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_game_controller.html#a71c874fd5595342295a689270c14825a">   68</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_game_controller.html#a71c874fd5595342295a689270c14825a">calcDiffBetweenMatrixesPercentage</a>(cv::Mat stopped, cv::Mat diffMatrix);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">int</span> *getThresh1();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">void</span> setThresh1(<span class="keywordtype">int</span> thresh1);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">int</span> *<a class="code hl_function" href="class_game_controller.html#adbca76d48318811a44ad75065eab6516">getThresh1</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_game_controller.html#a44d338c70bd6352d214728b93ae29864">   71</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_controller.html#a44d338c70bd6352d214728b93ae29864">setThresh1</a>(<span class="keywordtype">int</span> thresh1);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">int</span> *getThresh2();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> setThresh2(<span class="keywordtype">int</span> thresh2);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">int</span> *<a class="code hl_function" href="class_game_controller.html#a754eebf28d5482d5a5331150ff5b5424">getThresh2</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_game_controller.html#a09fe636d1536ac0f86e41357335dfb1f">   74</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_controller.html#a09fe636d1536ac0f86e41357335dfb1f">setThresh2</a>(<span class="keywordtype">int</span> thresh2);</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">int</span> *getArea();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">void</span> setArea(<span class="keywordtype">int</span> area);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">int</span> *<a class="code hl_function" href="class_game_controller.html#a5e34a76d81131e3c328d65bc59fb3131">getArea</a>();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_game_controller.html#a208c227c6993c889f02a51d1f954758f">   77</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_controller.html#a208c227c6993c889f02a51d1f954758f">setArea</a>(<span class="keywordtype">int</span> area);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">int</span> *getKernelWidth();</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> setKernelWidth(<span class="keywordtype">int</span> kernelWidth);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">int</span> *<a class="code hl_function" href="class_game_controller.html#ad51ed2d5e1168d1f1f083e6cf32ac4db">getKernelWidth</a>();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_game_controller.html#a9d016d1b93a73761aa35b707e118c799">   80</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_controller.html#a9d016d1b93a73761aa35b707e118c799">setKernelWidth</a>(<span class="keywordtype">int</span> kernelWidth);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">int</span> *getKernelHeight();</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> setKernelHeight(<span class="keywordtype">int</span> kernelHeight);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">int</span> *<a class="code hl_function" href="class_game_controller.html#ab8ea75ade0d37f95f381f9bd6e551102">getKernelHeight</a>();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_game_controller.html#a8ec587737401bd8d33807d6394920975">   83</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_controller.html#a8ec587737401bd8d33807d6394920975">setKernelHeight</a>(<span class="keywordtype">int</span> kernelHeight);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    cv::Mat getKernel();</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">void</span> setKernel(cv::Mat kernel);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    cv::Mat <a class="code hl_function" href="class_game_controller.html#a443e227956673854209c23faf964c91b">getKernel</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_game_controller.html#af8f91c2d65d5d5708608c274950c3f48">   86</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_controller.html#af8f91c2d65d5d5708608c274950c3f48">setKernel</a>(cv::Mat kernel);</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>};</div>
+<div class="ttc" id="a_player_8hpp_html"><div class="ttname"><a href="_player_8hpp.html">Player.hpp</a></div></div>
 <div class="ttc" id="aclass_game_controller_html"><div class="ttname"><a href="class_game_controller.html">GameController</a></div><div class="ttdoc">Klasa służąca do wykonywania niskopoziomowych operacji dla klasy Game związanych między innymi z prep...</div><div class="ttdef"><b>Definition:</b> GameController.hpp:15</div></div>
+<div class="ttc" id="aclass_game_controller_html_a09fe636d1536ac0f86e41357335dfb1f"><div class="ttname"><a href="class_game_controller.html#a09fe636d1536ac0f86e41357335dfb1f">GameController::setThresh2</a></div><div class="ttdeci">void setThresh2(int thresh2)</div></div>
 <div class="ttc" id="aclass_game_controller_html_a10e55dce9a1b8d8e3ea199e13ad50daf"><div class="ttname"><a href="class_game_controller.html#a10e55dce9a1b8d8e3ea199e13ad50daf">GameController::getDifferenceMatrix</a></div><div class="ttdeci">cv::Mat getDifferenceMatrix(cv::Mat stopped, cv::Mat current)</div><div class="ttdoc">Zwraca klatkę różnicową między zadanymi klatkami.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:26</div></div>
+<div class="ttc" id="aclass_game_controller_html_a208c227c6993c889f02a51d1f954758f"><div class="ttname"><a href="class_game_controller.html#a208c227c6993c889f02a51d1f954758f">GameController::setArea</a></div><div class="ttdeci">void setArea(int area)</div></div>
 <div class="ttc" id="aclass_game_controller_html_a2a937541a3ffd278975215863054b9c4"><div class="ttname"><a href="class_game_controller.html#a2a937541a3ffd278975215863054b9c4">GameController::determinePlayerIdentNumber</a></div><div class="ttdeci">int determinePlayerIdentNumber(cv::Mat preparedFrame, cv::Rect playerIdentCords)</div><div class="ttdoc">Określa identyfikator gracza (numer 1 - 14).</div><div class="ttdef"><b>Definition:</b> GameController.cpp:35</div></div>
 <div class="ttc" id="aclass_game_controller_html_a385b7efdd6df1735bfc77e10998442b3"><div class="ttname"><a href="class_game_controller.html#a385b7efdd6df1735bfc77e10998442b3">GameController::findPlayerIdents</a></div><div class="ttdeci">std::vector&lt; cv::Rect &gt; findPlayerIdents(cv::Mat preparedFrame, int numOfEdges=RECTANGLES, double aspectLow=ASPECT_RATIO_LOW, double aspectHigh=ASPECT_RATIO_HIGH)</div><div class="ttdoc">Umożliwia wyszukiwanie.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:16</div></div>
+<div class="ttc" id="aclass_game_controller_html_a443e227956673854209c23faf964c91b"><div class="ttname"><a href="class_game_controller.html#a443e227956673854209c23faf964c91b">GameController::getKernel</a></div><div class="ttdeci">cv::Mat getKernel()</div><div class="ttdef"><b>Definition:</b> GameController.cpp:60</div></div>
+<div class="ttc" id="aclass_game_controller_html_a44d338c70bd6352d214728b93ae29864"><div class="ttname"><a href="class_game_controller.html#a44d338c70bd6352d214728b93ae29864">GameController::setThresh1</a></div><div class="ttdeci">void setThresh1(int thresh1)</div></div>
+<div class="ttc" id="aclass_game_controller_html_a5e34a76d81131e3c328d65bc59fb3131"><div class="ttname"><a href="class_game_controller.html#a5e34a76d81131e3c328d65bc59fb3131">GameController::getArea</a></div><div class="ttdeci">int * getArea()</div><div class="ttdef"><b>Definition:</b> GameController.cpp:49</div></div>
 <div class="ttc" id="aclass_game_controller_html_a71c874fd5595342295a689270c14825a"><div class="ttname"><a href="class_game_controller.html#a71c874fd5595342295a689270c14825a">GameController::calcDiffBetweenMatrixesPercentage</a></div><div class="ttdeci">double calcDiffBetweenMatrixesPercentage(cv::Mat stopped, cv::Mat diffMatrix)</div><div class="ttdoc">Oblicza procent czarnych pikseli w stosunku do wszystkich pikseli.</div></div>
+<div class="ttc" id="aclass_game_controller_html_a754eebf28d5482d5a5331150ff5b5424"><div class="ttname"><a href="class_game_controller.html#a754eebf28d5482d5a5331150ff5b5424">GameController::getThresh2</a></div><div class="ttdeci">int * getThresh2()</div><div class="ttdef"><b>Definition:</b> GameController.cpp:46</div></div>
 <div class="ttc" id="aclass_game_controller_html_a7d72ff3f639acb68578e20fee3649b42"><div class="ttname"><a href="class_game_controller.html#a7d72ff3f639acb68578e20fee3649b42">GameController::GameController</a></div><div class="ttdeci">GameController()</div><div class="ttdoc">Konstruktora kontrolera gry.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:6</div></div>
+<div class="ttc" id="aclass_game_controller_html_a8ec587737401bd8d33807d6394920975"><div class="ttname"><a href="class_game_controller.html#a8ec587737401bd8d33807d6394920975">GameController::setKernelHeight</a></div><div class="ttdeci">void setKernelHeight(int kernelHeight)</div></div>
+<div class="ttc" id="aclass_game_controller_html_a9d016d1b93a73761aa35b707e118c799"><div class="ttname"><a href="class_game_controller.html#a9d016d1b93a73761aa35b707e118c799">GameController::setKernelWidth</a></div><div class="ttdeci">void setKernelWidth(int kernelWidth)</div></div>
+<div class="ttc" id="aclass_game_controller_html_ab8ea75ade0d37f95f381f9bd6e551102"><div class="ttname"><a href="class_game_controller.html#ab8ea75ade0d37f95f381f9bd6e551102">GameController::getKernelHeight</a></div><div class="ttdeci">int * getKernelHeight()</div><div class="ttdef"><b>Definition:</b> GameController.cpp:56</div></div>
 <div class="ttc" id="aclass_game_controller_html_acde1f4fe64d5f7d3b1c2e5ccee0fdc51"><div class="ttname"><a href="class_game_controller.html#acde1f4fe64d5f7d3b1c2e5ccee0fdc51">GameController::getPreparedFrame</a></div><div class="ttdeci">cv::Mat getPreparedFrame(cv::Mat rawFrame)</div><div class="ttdoc">Wykonuje preprocessing na zadanej klatce.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:22</div></div>
+<div class="ttc" id="aclass_game_controller_html_ad51ed2d5e1168d1f1f083e6cf32ac4db"><div class="ttname"><a href="class_game_controller.html#ad51ed2d5e1168d1f1f083e6cf32ac4db">GameController::getKernelWidth</a></div><div class="ttdeci">int * getKernelWidth()</div><div class="ttdef"><b>Definition:</b> GameController.cpp:52</div></div>
+<div class="ttc" id="aclass_game_controller_html_adbca76d48318811a44ad75065eab6516"><div class="ttname"><a href="class_game_controller.html#adbca76d48318811a44ad75065eab6516">GameController::getThresh1</a></div><div class="ttdeci">int * getThresh1()</div><div class="ttdef"><b>Definition:</b> GameController.cpp:43</div></div>
+<div class="ttc" id="aclass_game_controller_html_af8f91c2d65d5d5708608c274950c3f48"><div class="ttname"><a href="class_game_controller.html#af8f91c2d65d5d5708608c274950c3f48">GameController::setKernel</a></div><div class="ttdeci">void setKernel(cv::Mat kernel)</div></div>
+<div class="ttc" id="apreprocess_8hpp_html"><div class="ttname"><a href="preprocess_8hpp.html">preprocess.hpp</a></div></div>
+<div class="ttc" id="asettings_8hpp_html"><div class="ttname"><a href="settings_8hpp.html">settings.hpp</a></div><div class="ttdoc">Są tutaj ustawienia długości trwania poszczególnych faz, trudności gry, ilości graczy biorących udzia...</div></div>
+<div class="ttc" id="asettings_8hpp_html_a04ec2143684ae8a6dc120e5350cd589b"><div class="ttname"><a href="settings_8hpp.html#a04ec2143684ae8a6dc120e5350cd589b">ASPECT_RATIO_HIGH</a></div><div class="ttdeci">#define ASPECT_RATIO_HIGH</div><div class="ttdef"><b>Definition:</b> settings.hpp:9</div></div>
+<div class="ttc" id="asettings_8hpp_html_a2930e80148251a79663770a5aee6bebe"><div class="ttname"><a href="settings_8hpp.html#a2930e80148251a79663770a5aee6bebe">ASPECT_RATIO_LOW</a></div><div class="ttdeci">#define ASPECT_RATIO_LOW</div><div class="ttdef"><b>Definition:</b> settings.hpp:8</div></div>
+<div class="ttc" id="asettings_8hpp_html_acc7898a4c2efcd589bdab792216199ee"><div class="ttname"><a href="settings_8hpp.html#acc7898a4c2efcd589bdab792216199ee">RECTANGLES</a></div><div class="ttdeci">#define RECTANGLES</div><div class="ttdef"><b>Definition:</b> settings.hpp:7</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
