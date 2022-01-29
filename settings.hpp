@@ -1,3 +1,7 @@
+/**
+ * @file settings.hpp
+ * @brief Są tutaj ustawienia długości trwania poszczególnych faz, trudności gry, ilości graczy biorących udział w grze, oraz stałe używane wewnątrz naszych funkcji m.in. do preprocessingu.
+ */
 #pragma once
 #define DEBUG_MODE 1
 #define RECTANGLES 4
