@@ -1,8 +1,12 @@
-Before launching build project.
-If you want to launch with debugger, press f5 (long)
-If you want just launch preff f7 (or run task if you have no keyboard shortcut set) and then choose "Run without DBG"
-Extensions you need: CodeLLDB, CmakeTools.
+# Dokumentacja projektu
 
-OneDrive data movies:
+Aby wyświetlić dokumentację projektu musimy wejść w folder html. W nim włączamy plik index.html. Powinna ukazać nam się dokumentacja wygenerowana za pomocą doxygena.
 
-https://tulodz-my.sharepoint.com/personal/228898_edu_p_lodz_pl/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F228898%5Fedu%5Fp%5Flodz%5Fpl%2FDocuments%2FProjektKompetencyjnyDane&originalPath=aHR0cHM6Ly90dWxvZHotbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvMjI4ODk4X2VkdV9wX2xvZHpfcGwvRXE1YWFuQUpfd2hDbEVkWWc4YW5FRndCV05hc2NFd3RxTnptTVFyZG9tTnFqQT9ydGltZT1JNERZcDlXVTJVZw
+# Uruchomienie projektu
+
+Aby uruchomic projekt w programie visual studio 2019 przechodzimy do folderu build i uruchamiamy plik BabaYaga.sln.
+Z poziomu visual studio musimy ustawić dwie rzeczy:
+
+- po pierwsze w eksploratorze rozwiązań klikamy prawy przycisk myszy na BabaYaga i ustawiamy jako projekt startowy
+- po drugie klikamy na BabaYaga -> właściwości -> włąściwości konfiguracji -> debugowanie -> Katalog roboczy -> przeglądaj i wskazujemy na folder Resources naszego projektu
+  Program włączy się w trybie filmu jednakże projekt działa też w czasie rzeczywistym do czego potrzebna jest kamera z laptopa / telefon zparowany z komputerem za pomocą aplikacji iriun webcam, oczywiśćie potrzebne są odpowiednie plakietki graczy.
